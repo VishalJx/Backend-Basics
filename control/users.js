@@ -41,7 +41,7 @@ export const deleteUser =(req,resp)=>{
 
 export const updateSpecific =(req,resp)=>{
     const {id} = req.params;
-    const {firstName, lastNAme, age} = req.body;  //receiving the parsed data (data is parsed using body.parser()).......
+    const {firstName, lastNAme, age} = req.body;  //receiving the parsed data (data is parsed using body.parser()). //githubtest
     const user = users.find((user)=>user.id ==id);
 
     if(firstName){ user.firstName = firstName};
